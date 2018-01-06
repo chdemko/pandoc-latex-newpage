@@ -12,7 +12,7 @@ def newpage(elem, doc):
         return RawBlock('\\cleardoublepage', 'tex')
 
 def main(doc = None):
-    run_filter(newpage, doc = doc)
+    return run_filter(newpage, doc = doc)
 
 if __name__ == '__main__':
     main()
