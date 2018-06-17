@@ -5,7 +5,6 @@
 [![PyPI version](https://img.shields.io/pypi/v/pandoc-latex-newpage.svg)](https://pypi.org/project/pandoc-latex-newpage/)
 [![PyPI format](https://img.shields.io/pypi/format/pandoc-latex-newpage.svg)](https://pypi.org/project/pandoc-latex-newpage/)
 [![License](https://img.shields.io/pypi/l/pandoc-latex-newpage.svg)](https://raw.githubusercontent.com/chdemko/pandoc-latex-newpage/master/LICENSE)
-[![Downloads](https://img.shields.io/pypi/dm/pandoc-latex-newpage.svg)](https://pypi.org/project/pandoc-latex-newpage/)
 [![Python version](https://img.shields.io/pypi/pyversions/pandoc-latex-newpage.svg)](https://pypi.org/project/pandoc-latex-newpage/)
 [![Development Status](https://img.shields.io/pypi/status/pandoc-latex-newpage.svg)](https://pypi.org/project/pandoc-latex-newpage/)
 
