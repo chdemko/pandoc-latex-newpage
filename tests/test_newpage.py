@@ -39,3 +39,28 @@ Example
             """,
             "latex",
         )
+
+    def test_newpage_single(self):
+        self.verify_conversion(
+            """
+---
+pandoc-latex-newpage:
+  double: false
+---
+
+Example
+
+-------------
+
+Example
+            """,
+            """
+Example
+
+```{=tex}
+\\clearpage
+```
+Example
+            """,
+            "latex",
+        )
