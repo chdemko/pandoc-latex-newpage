@@ -1,10 +1,10 @@
 # pandoc-latex-newpage
 ![Python package](https://github.com/chdemko/pandoc-latex-newpage/workflows/Python%20package/badge.svg?branch=develop)
-[![Coveralls](https://img.shields.io/coveralls/github/chdemko/pandoc-latex-newpage/0.1.2.svg)](https://coveralls.io/github/chdemko/pandoc-latex-newpage?branch=0.1.2)
+[![Coveralls](https://img.shields.io/coveralls/github/chdemko/pandoc-latex-newpage/0.2.0.svg)](https://coveralls.io/github/chdemko/pandoc-latex-newpage?branch=0.2.0)
 [![Scrutinizer](https://img.shields.io/scrutinizer/g/chdemko/pandoc-latex-newpage.svg)](https://scrutinizer-ci.com/g/chdemko/pandoc-latex-newpage/)
 [![PyPI version](https://img.shields.io/pypi/v/pandoc-latex-newpage.svg)](https://pypi.org/project/pandoc-latex-newpage/)
 [![PyPI format](https://img.shields.io/pypi/format/pandoc-latex-newpage.svg)](https://pypi.org/project/pandoc-latex-newpage/)
-[![License](https://img.shields.io/pypi/l/pandoc-latex-newpage.svg)](https://raw.githubusercontent.com/chdemko/pandoc-latex-newpage/0.1.2/LICENSE)
+[![License](https://img.shields.io/pypi/l/pandoc-latex-newpage.svg)](https://raw.githubusercontent.com/chdemko/pandoc-latex-newpage/0.2.0/LICENSE)
 [![Python version](https://img.shields.io/pypi/pyversions/pandoc-latex-newpage.svg)](https://pypi.org/project/pandoc-latex-newpage/)
 [![Development Status](https://img.shields.io/pypi/status/pandoc-latex-newpage.svg)](https://pypi.org/project/pandoc-latex-newpage/)
 
