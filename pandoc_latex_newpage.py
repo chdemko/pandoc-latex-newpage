@@ -1,15 +1,32 @@
 #!/usr/bin/env python
 
 """
-Pandoc filter for converting horizontal rule to new page in LaTeX
+Pandoc filter for converting horizontal rule to new page in LaTeX.
 """
 
-from panflute import HorizontalRule, MetaBool, MetaMap, RawBlock, run_filter  # type: ignore
+from panflute import (  # type: ignore
+    HorizontalRule,
+    MetaBool,
+    MetaMap,
+    RawBlock,
+    run_filter,
+)
 
 
 def newpage(elem, doc):
-    """
-    Replace HorizontalRule by a \\clearpage or a \\cleardoublepage
+    r"""
+    Replace HorizontalRule by a \clearpage or a \cleardoublepage.
+
+    Arguments
+    ---------
+    elem
+        A pandoc element
+    doc
+        pandoc document
+
+    Returns
+    -------
+        A RawBlock or None.
     """
     # Is it in the right format and is it an HorizontalRule?
     if doc.format == "latex" and isinstance(elem, HorizontalRule):
@@ -25,22 +42,32 @@ def prepare(doc):
 
     Arguments
     ---------
-        doc: pandoc document
+    doc
+        pandoc document
     """
     doc.double = True
 
-    if "pandoc-latex-newpage" in doc.metadata.content and isinstance(
-        doc.metadata.content["pandoc-latex-newpage"], MetaMap
+    if (
+        "pandoc-latex-newpage" in doc.metadata.content
+        and isinstance(doc.metadata.content["pandoc-latex-newpage"], MetaMap)
+        and "double" in doc.metadata.content["pandoc-latex-newpage"]
+        and isinstance(doc.metadata.content["pandoc-latex-newpage"]["double"], MetaBool)
     ):
-        if "double" in doc.metadata.content["pandoc-latex-newpage"] and isinstance(
-            doc.metadata.content["pandoc-latex-newpage"]["double"], MetaBool
-        ):
-            doc.double = doc.metadata.content["pandoc-latex-newpage"]["double"].boolean
+        doc.double = doc.metadata.content["pandoc-latex-newpage"]["double"].boolean
 
 
 def main(doc=None):
     """
-    main function
+    Convert the pandoc document.
+
+    Arguments
+    ---------
+    doc
+        pandoc document
+
+    Returns
+    -------
+        The modified document.
     """
     return run_filter(newpage, prepare=prepare, doc=doc)
 
