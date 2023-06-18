@@ -4,7 +4,7 @@
 
 [tool.poetry]
     name = "pandoc-latex-newpage"
-    version = "1.0.0.0"
+    version = "1.0.0.1"
     description="A pandoc filter for converting horizontal rule to new page in LaTeX"
     authors = ["Christophe Demko <chdemko@gmail.com>"]
     license = "BSD-3-Clause"
