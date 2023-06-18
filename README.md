@@ -44,7 +44,6 @@ $ pip install --upgrade --force git+https://github.com/chdemko/pandoc-latex-newp
 `pip` is a script that downloads and installs modules from the Python Package Index, [PyPI].  It should come installed with your python distribution. If you are running linux, `pip` may be bundled separately. On a Debian-based system (including Ubuntu), you can install it as root using
 
 ~~~shell
-$ sudo apt-get update
 $ sudo apt-get install python3-pip
 ~~~
 
