@@ -3,7 +3,7 @@ Installation
 
 [![Python package](https://github.com/chdemko/pandoc-latex-newpage/workflows/Python%20package/badge.svg?branch=develop)](https://github.com/chdemko/pandoc-latex-newpage/actions/workflows/python-package.yml)
 [![Coveralls](https://img.shields.io/coveralls/github/chdemko/pandoc-latex-newpage/develop.svg?logo=Codecov&logoColor=white)](https://coveralls.io/github/chdemko/pandoc-latex-newpage?branch=develop)
-[![Scrutinizer](https://img.shields.io/scrutinizer/g/chdemko/pandoc-latex-newpage.svg)](https://scrutinizer-ci.com/g/chdemko/pandoc-latex-newpage/)
+[![Scrutinizer](https://img.shields.io/scrutinizer/g/chdemko/pandoc-latex-newpage.svg?logo=scrutinizer)](https://scrutinizer-ci.com/g/chdemko/pandoc-latex-newpage/)
 [![Code Climate](https://codeclimate.com/github/chdemko/pandoc-latex-newpage/badges/gpa.svg)](https://codeclimate.com/github/chdemko/pandoc-latex-newpage/)
 [![CodeFactor](https://img.shields.io/codefactor/grade/github/chdemko/pandoc-latex-newpage/develop.svg?logo=codefactor)](https://www.codefactor.io/repository/github/chdemko/pandoc-latex-newpage)
 [![Codacy](https://img.shields.io/codacy/grade/c831c2050ef64ed590bf0b37d204cd96.svg?logo=codacy)](https://app.codacy.com/gh/chdemko/pandoc-latex-newpage/dashboard)
