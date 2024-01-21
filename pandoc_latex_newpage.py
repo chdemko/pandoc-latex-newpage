@@ -4,7 +4,7 @@
 Pandoc filter for converting horizontal rule to new page in LaTeX.
 """
 
-from panflute import (  # type: ignore
+from panflute import (
     HorizontalRule,
     MetaBool,
     MetaMap,
