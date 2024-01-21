@@ -42,7 +42,7 @@ $ pipx install pandoc-latex-newpage
 To upgrade to the most recent release, use
 
 ~~~shell
-$ pipx install --upgrade pandoc-latex-newpage
+$ pipx upgrade pandoc-latex-newpage
 ~~~
 
 `pipx` is a script to install and run python applications in isolated environments from the Python Package Index, [PyPI]. It can be installed using instructions given [here](https://pipx.pypa.io/stable/).
