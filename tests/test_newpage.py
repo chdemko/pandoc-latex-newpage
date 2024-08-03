@@ -1,5 +1,3 @@
-# This Python file uses the following encoding: utf-8
-
 from unittest import TestCase
 from panflute import convert_text
 
@@ -32,9 +30,8 @@ Example
             """
 Example
 
-```{=tex}
 \\cleardoublepage
-```
+
 Example
             """,
             "latex",
@@ -57,9 +54,8 @@ Example
             """
 Example
 
-```{=tex}
 \\clearpage
-```
+
 Example
             """,
             "latex",
