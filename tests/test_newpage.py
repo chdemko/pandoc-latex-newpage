@@ -5,18 +5,44 @@ import pandoc_latex_newpage
 
 
 class NewPageTest(TestCase):
-    def verify_conversion(self, markdown, expected, format="markdown"):
-        doc = convert_text(markdown, standalone=True)
-        doc.format = format
-        pandoc_latex_newpage.main(doc)
+    def verify_conversion(
+        self,
+        text,
+        expected,
+        transform,
+        input_format="markdown",
+        output_format="latex",
+        standalone=False,
+    ) -> None:
+        """
+        Verify the conversion.
+
+        Parameters
+        ----------
+        text
+            input text
+        expected
+            expected text
+        transform
+            filter function
+        input_format
+            input format
+        output_format
+            output format
+        standalone
+            is the output format standalone ?
+        """
+        doc = convert_text(text, input_format=input_format, standalone=True)
+        doc.format = output_format
+        doc = transform(doc)
         converted = convert_text(
             doc.content,
             input_format="panflute",
-            output_format="markdown",
+            output_format=output_format,
             extra_args=["--wrap=none"],
-            standalone=True,
+            standalone=standalone,
         )
-        self.assertEqual(converted, expected.strip())
+        self.assertEqual(converted.strip(), expected.strip())
 
     def test_newpage(self):
         self.verify_conversion(
@@ -34,7 +60,7 @@ Example
 
 Example
             """,
-            "latex",
+            pandoc_latex_newpage.main,
         )
 
     def test_newpage_single(self):
@@ -58,5 +84,5 @@ Example
 
 Example
             """,
-            "latex",
+            pandoc_latex_newpage.main,
         )

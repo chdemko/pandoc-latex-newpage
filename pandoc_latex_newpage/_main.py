@@ -3,6 +3,7 @@
 """
 Pandoc filter for converting horizontal rule to new page in LaTeX.
 """
+from __future__ import annotations
 
 from panflute import (
     Doc,
