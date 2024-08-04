@@ -3,8 +3,11 @@
 """
 Pandoc filter for converting horizontal rule to new page in LaTeX.
 """
+from __future__ import annotations
 
 from panflute import (
+    Doc,
+    Element,
     HorizontalRule,
     MetaBool,
     MetaMap,
@@ -13,7 +16,7 @@ from panflute import (
 )
 
 
-def newpage(elem, doc):
+def newpage(elem: Element, doc: Doc) -> RawBlock | None:
     r"""
     Replace HorizontalRule by a \clearpage or a \cleardoublepage.
 
@@ -26,6 +29,7 @@ def newpage(elem, doc):
 
     Returns
     -------
+    RawBlock | None
         A RawBlock or None.
     """
     # Is it in the right format and is it an HorizontalRule?
@@ -36,7 +40,7 @@ def newpage(elem, doc):
     return None
 
 
-def prepare(doc):
+def prepare(doc: Doc) -> None:
     """
     Prepare document.
 
@@ -56,7 +60,7 @@ def prepare(doc):
         doc.double = doc.metadata.content["pandoc-latex-newpage"]["double"].boolean
 
 
-def main(doc=None):
+def main(doc: Doc | None = None) -> Doc:
     """
     Convert the pandoc document.
 
@@ -67,6 +71,7 @@ def main(doc=None):
 
     Returns
     -------
+    Doc
         The modified document.
     """
     return run_filter(newpage, prepare=prepare, doc=doc)

@@ -16,7 +16,8 @@ All horizontal rules will be replaced by a new page
 Example
 -------
 
-Demonstration: Using [pandoc-latex-newpage-sample.txt] as input gives output file in [pdf].
+Demonstration: Using [pandoc-latex-newpage-sample.txt] as input gives output
+file in [pdf].
 
 [pandoc-latex-newpage-sample.txt]: https://raw.githubusercontent.com/chdemko/pandoc-latex-newpage/develop/docs/images/pandoc-latex-newpage-sample.txt
 [pdf]: https://raw.githubusercontent.com/chdemko/pandoc-latex-newpage/develop/docs/images/pandoc-latex-newpage-sample.pdf
