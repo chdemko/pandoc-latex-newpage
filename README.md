@@ -38,14 +38,14 @@ pre-installed on linux and Mac OS X, and which is easily installed
 
 Install *pandoc-latex-newpage* using the bash command
 
-~~~{prompt} bash
-pipx install pandoc-latex-newpage
+~~~shell-session
+$ pipx install pandoc-latex-newpage
 ~~~
 
 To upgrade to the most recent release, use
 
-~~~{prompt} bash
-pipx upgrade pandoc-latex-newpage
+~~~shell-session
+$ pipx upgrade pandoc-latex-newpage
 ~~~
 
 `pipx` is a script to install and run python applications in isolated

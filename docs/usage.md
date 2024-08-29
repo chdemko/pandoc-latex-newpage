@@ -3,8 +3,8 @@ Usage
 
 To apply the filter, use the following option with pandoc:
 
-~~~{prompt} bash
-pandoc --filter pandoc-latex-newpage
+~~~shell-session
+$ pandoc --filter pandoc-latex-newpage
 ~~~
 
 Explanation
